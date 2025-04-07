@@ -17,6 +17,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN}}
 
       - name: Run Logging Script
+        env:
+          GITHUB_USER: ${{ github.actor }}
         run: |
           chmod +x log_time.sh 
           ./log_time.sh
