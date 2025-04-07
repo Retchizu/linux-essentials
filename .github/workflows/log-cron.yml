@@ -9,11 +9,11 @@ jobs:
 
     steps:
       -name: Checkout Repository
-      users: actions/checkout@v3
+      uses: actions/checkout@v3
 
       -name: Run Logging Script
       run: |
-        chmond +x log_time.sh
+        chmod +x log_time.sh
         ./log_time.sh
 
       -name: Commit and push changes
