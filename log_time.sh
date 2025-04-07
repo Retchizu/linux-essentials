@@ -1,1 +1,1 @@
-echo "Current Date and Time $(date)" >> log.txtgit add
+echo "Current Date and Time $(date)" >> log.txt
